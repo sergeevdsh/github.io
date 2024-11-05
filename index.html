@@ -3,96 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Резюме Сергеевой Дарьи</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-        }
-        header {
-            background-color: #007bff;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            border-radius: 8px;
-        }
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        h2 {
-            color: #007bff;
-            margin-top: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 0.9em;
-            color: #777;
-        }
-    </style>
+    <meta name="description" content="Resume">
+    <meta name="author" content="Daria Sergeeva">
+    <title>Resume</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Сергеева Дарья</h1>
-        <p>Acronis Maintenance Engineer</p>
+        <div class="navbar">
+            <div class="logo">
+                <h1>Daria</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <div class="container">
-        <section class="contact-info">
-            <h2>Контакты</h2>
-            <p>Email: sergeevdsh@gmail.com</p>
-            <p>Телефон: +7 (123) 456-78-90</p>
-            <p>GitHub: <a href="https://github.com/ivanov" target="_blank">github.com/sergeevdsh</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/ivanov" target="_blank">linkedin.com/in/sergeevdsh</a></p>
-        </section>
 
-        <section>
-            <h2>Образование</h2>
-            <ul>
-                <li>НГИЭУ, Факультет информационных технологий, 2019-2023</li>
-            </ul>
-        </section>
+    <section id="about" class="section">
+        <div class="content-container">
+            <h2>About</h2>
+            <p>I am using an SQL developer with API experience. My core skills include SQL, Power BI (DAX), Postman. I am constantly striving to improve my skills and am always open to new opportunities.</p>
+        </div>
+    </section>
 
-        <section>
-            <h2>Опыт работы</h2>
-            <ul>
-                <li><strong>Компания "technopeak.ae"</strong>, Acronis Maintenance Engineer (2024 - настоящее время)</li>
-                <li><strong>Компания "samokat.tech"</strong>, IT Support Office Engineer (2023 - 2024)</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Навыки</h2>
-            <ul>
-                <li>SQL (MySQL, DBeaver)</li>
+    <section id="skills" class="section">
+        <div class="content-container">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>SQL, DBeaver</li>
                 <li>PowerBI (DAX)</li>
-                <li>RDM(Remote desktop manager)</li>
-                <li>OTRS, JIRA, Confluence</li>
+                <li>Postman</li>
+                <li>Git, GitHub</li>
+                <li>Jira, Confluence, Admin M365, RDM</li>
             </ul>
-        </section>
+        </div>
+    </section>
 
-        <section>
+    <section id="projects" class="section">
+        <div class="content-container">
             <h2>Проекты</h2>
-            <ul>
-                <li><strong>Проект "test"</strong> - описание проекта.</li>
-                <li><strong>Проект "test"</strong> - описание проекта.</li>
-            </ul>
-        </section>
-    </div>
+            <div class="project-item">
+                <h3>Project 1</h3>
+                <p>Описание проекта 1. Используемые технологии: DAX, SQL, Postman</p>
+            </div>
+            <div class="project-item">
+                <h3>Project 2</h3>
+                <p>Описание проекта 2. Используемые технологии: PowerBI, Figma</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="content-container">
+            <h2>Contact</h2>
+            <p>Email: sergeevdsh@gmail.com</p>
+            <p>GitHub: <a href="https://github.com/sergeevdsh" target="_blank">github.com/sergeevdsh</a></p>
+        </div>
+    </section>
+
     <footer>
-        <p>© 2024 Сергеева Дарья. Все права защищены.</p>
+        <p>&copy; 2024 Daria Sergeeva. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
