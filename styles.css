@@ -67,6 +67,15 @@ h2 {
     color: #34495e;
 }
 
+.profile-photo {
+    width: 400px;  /* Установите нужную ширину */
+    height: 400px; /* Установите нужную высоту */
+    border-radius: 50%; /* Сделать изображение круглым */
+    object-fit: cover; /* Подгонка изображения по размеру */
+    margin: 20px 0; /* Отступ сверху и снизу */
+    border: 4px solid #3498db; /* Добавить обводку */
+}
+
 .skills-list {
     list-style: none;
     display: flex;
